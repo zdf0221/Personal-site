@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig authType="PASSWORD" host="172.105.231.148" id="1d65c144-5d84-460b-b1c2-a23a4def58c2" port="22" customName="Linode - Tokyo" nameFormat="CUSTOM" username="root" />
+      <sshConfig authType="PASSWORD" host="172.105.231.148" id="97bf615a-feaf-4259-8c65-55faa8bcbc3a" port="22" customName="Linode - Tokyo" nameFormat="CUSTOM" username="root" />
+    </configs>
+  </component>
+</project>

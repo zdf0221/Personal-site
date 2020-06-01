@@ -1,0 +1,19 @@
+{% extends "main.html" %}
+
+{% block body %}
+<h2>Random Daily pictures</h2>
+    {% if not picture %}
+    <div>
+        <p>Opps, There are no pictures available, please come back later.</p>
+        <p>...</p>P
+    </div>
+    {% end %}
+    {% module Picture(picture) %}
+    <div>
+        <p> Disclaimer: All the pictures are collected from the Pixiv daily Rank page, The information contained on
+            this website is for reference only. It shall not be held responsible for anything that anyone engages
+            in whole or in part based on all or part of the content of this website and the consequences caused
+            by any actions or omissions. zdf0221.com is not responsible for any third-party content
+            that can be accessed through this website.</p>
+    </div>
+{% end %}

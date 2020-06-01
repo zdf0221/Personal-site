@@ -1,0 +1,17 @@
+{% extends "main.html" %}
+{% autoescape None %}
+
+{% block body %}
+    <form method="POST">
+    Title <input type="text" name="title"
+        value="{{ article.get('title', '') }}"><br>
+    Subtitle <input type="text" name="subtitle"
+        value="{{ article.get('subtitle', '') }}"><br>
+    Author <input type="text" name="author"
+        value="{{ article.get('author', '') }}"><br>
+    Description<br>
+        <textarea id="comment-md" name="description" placeholder="Say something..." rows="10" cols="40">{% raw article.get('description', '')%}</textarea>
+        <br>
+    <input type="submit" value="Post New Article">
+</form>
+{% end %}

@@ -1,0 +1,17 @@
+{% extends "main.html" %}
+
+{% block body %}
+<h2>Recent articles</h2>
+    {% if not articles %}
+    <div>
+        <p>Opps, There are no articles available, please come back later.</p>
+        <p>...</p>
+    </div>
+    {% end %}
+
+    {% for article in articles %}
+        {% module Article(article) %}
+        <br>
+        <br>
+    {% end %}
+{% end %}

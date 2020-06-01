@@ -1,0 +1,13 @@
+<div class="article">
+    <h3 class="article_title">{{ article["title"] }}</h3>
+    {% if article["subtitle"] != "" %}
+        <h4 class="article_subtitle">{{ article["subtitle"] }}</h4>
+    {% end %}
+    <div class="article_details">
+        <div class="article_date_added">
+            Added: {{ article["date_added"] }}
+        </div>
+        <h5>Description:</h5>
+        <div class="article_body">{% raw article["description"] %}</div>
+    </div>
+</div>

@@ -1,0 +1,108 @@
+<!doctype html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.6">
+    <title>{{ page_title }}</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/static/css/sticky-footer-navbar.css" rel="stylesheet">
+    <link data-require="bootstrap-css@3.1.1" data-semver="3.1.1" rel="stylesheet" href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" />
+
+    <!-- Favicons -->
+    <meta name="theme-color" content="#563d7c">
+
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+
+    <!-- Custom styles for this template -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script data-require="marked@*" data-semver="0.3.1" src="http://cdnjs.cloudflare.com/ajax/libs/marked/0.3.1/marked.js"></script>
+    <script src="https://cdn.rawgit.com/toopay/bootstrap-markdown/master/js/bootstrap-markdown.js"></script>
+    <script src="https://rawgit.com/lodev09/jquery-filedrop/master/jquery.filedrop.js"></script>
+    <script src="https://rawgit.com/jeresig/jquery.hotkeys/master/jquery.hotkeys.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+
+    <link data-require="fontawesome@4.1.0" data-semver="4.1.0" rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="https://use.fontawesome.com/79f13ecb63.js"></script>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/toopay/bootstrap-markdown/master/css/bootstrap-markdown.min.css" />
+    <script src="/static/js/script.js"></script>
+
+</head>
+<body class="d-flex flex-column h-100">
+<header>
+    {% block header %}
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="#"> {{ page_title }} </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Main Page</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/recent_articles">Recent Articles</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link " href="/" aria-disabled="true">Post A New Article</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link " href="/daily_pic" aria-disabled="true">Daily Picture</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link " href="/disclaimer" aria-disabled="true">Disclaimer</a>
+                </li>
+            </ul>
+            <form class="form-inline mt-2 mt-md-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    {% end %}
+</header>
+
+<!-- Begin page content -->
+<main role="main" class="flex-shrink-0">
+    <div class="container" style="margin-top: 100px">
+        {% block body %}
+
+        {% end %}
+    </div>
+</main>
+
+
+<footer class="footer">
+    <div class="container">
+        <span class="text-muted">
+            {% block footer %}
+                <p>
+                For more information about Articles, Resources or Posts, please email me at
+                <a href="mailto:zdf.usa@gmail.com">zdf.usa@gmail.com</a>.
+                </p>
+            {% end %}
+        </span>
+    </div>
+</footer>

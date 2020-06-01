@@ -1,0 +1,9 @@
+<div class="picture">
+        <div>
+            <img src="{{ static_url(picture['url']) }}", alt="This is a setu", style="max-width: 1280px; max-height: 720px">
+            <form target="_parent" method="POST">
+                <button type="submit" class="btn btn-danger" name="upvote" value="{{ picture['url'] }}">Like it! 喜欢！</button>
+            </form>
+        </div>
+
+</div>
